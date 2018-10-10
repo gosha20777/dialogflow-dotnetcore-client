@@ -1,4 +1,4 @@
-api.ai: .NET Library
+api.ai: .NET Core Library
 ==============
 
 [![Build Status](https://travis-ci.org/api-ai/apiai-dotnet-client.svg?branch=master)](https://travis-ci.org/api-ai/apiai-dotnet-client)
@@ -11,12 +11,8 @@ Library provides simple programming interface for making text and voice requests
 ## Getting started
 
 ### Installation
-Library can be installed with Nuget
-```
-PM> Install-Package ApiAiSDK
-```
 
-Or can be downloaded as sources from the [Releases](https://github.com/api-ai/api-ai-net/releases) page.
+You can be downloaded as sources from the [Releases](https://github.com/gosha20777/dialogflow-dotnetcore-client/releases) page.
 
 ### Usage
 
