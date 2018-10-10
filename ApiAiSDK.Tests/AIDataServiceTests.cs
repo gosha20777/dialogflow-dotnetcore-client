@@ -40,7 +40,8 @@ namespace ApiAiSDK.Tests
 			Assert.IsNotNull(response);
 			Assert.AreEqual("greeting", response.Result.Action);
             Assert.AreEqual("Hi! How are you?", response.Result.Fulfillment.Speech);
-            Assert.IsNotNullOrEmpty(response.SessionId);
+            Assert.IsNull(response.SessionId);
+            Assert.IsEmpty(response.SessionId);
 		}
 
 	    private AIDataService CreateDataService()
@@ -192,7 +193,7 @@ namespace ApiAiSDK.Tests
         }
 
         [Test]
-        [ExpectedException(typeof(AIServiceException))]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedException(typeof(AIServiceException))]
         public void WrongEntitiesTest()
         {
             var dataService = CreateDataService();

@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "ApiAiSDK.Tests": {
+      "commandName": "Project"
+    }
+  }
+}

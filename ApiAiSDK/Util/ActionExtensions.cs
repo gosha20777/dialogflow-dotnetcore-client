@@ -22,18 +22,12 @@ namespace ApiAiSDK.Util
     {
         public static void InvokeSafely(this Action action)
         {
-            if (action != null)
-            {
-                action();
-            }
+            action?.Invoke();
         }
 
         public static void InvokeSafely<T>(this Action<T> action, T arg)
         {
-            if (action != null)
-            {
-                action(arg);
-            }
+            action?.Invoke(arg);
         }
     }
 }

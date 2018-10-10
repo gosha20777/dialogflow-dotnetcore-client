@@ -13,16 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 using System;
-using System.Collections;
 using System.Net;
 using System.IO;
 using System.Text;
 
 namespace ApiAiSDK.Http
 {
-	internal class MultipartHttpClient
+    internal class MultipartHttpClient
 	{
 		private const string delimiter = "--";
 		private string boundary = "SwA" + DateTime.UtcNow.Ticks.ToString("x") + "SwA";
